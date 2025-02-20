@@ -3,16 +3,16 @@
 1. Analize HTTP version <br>
 ![image](https://github.com/user-attachments/assets/044ed21b-7d72-4f6a-82e1-997752c53fd5)
 
-2. IP Address from client to server
+2. IP Address from client to server <br>
 ![image](https://github.com/user-attachments/assets/a8d48443-4b3d-4e6a-9719-6a83ef691914)
 
-three-way handshake
+three-way handshake <br>
 ![image](https://github.com/user-attachments/assets/815cc70d-2df7-4fa0-ba38-d835e75ed692)
 
-time client sending request
+time client sending request <br>
 ![image](https://github.com/user-attachments/assets/d0736592-6924-429b-9520-c94b56f3e226)
 
-time require to transfer and response from client to server and vice versa
+time require to transfer and response from client to server and vice versa <br>
 ![image](https://github.com/user-attachments/assets/6b06987d-460e-40dc-91f3-6cdcdbd700b4)
 
 
