@@ -109,5 +109,3 @@ Dari analisis ini, dapat disimpulkan bahwa:
 - Server merespons dalam waktu yang wajar dengan status **200 OK**.  
 - Waktu transfer data menunjukkan bahwa ada latensi dalam komunikasi jaringan.
 
-![image](https://github.com/user-attachments/assets/a40a9793-b656-4991-9ae1-94801187d270)
-
