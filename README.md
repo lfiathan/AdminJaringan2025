@@ -14,6 +14,7 @@ three-way handshake <br>
 ![image](https://github.com/user-attachments/assets/d0736592-6924-429b-9520-c94b56f3e226)
 
 4. time server receive HTTP request from client
+![image](https://github.com/user-attachments/assets/dca4f50b-f513-42e3-9ca5-651a9d916a14)
 
 
 5. time require to transfer and response from client to server and vice versa <br>
