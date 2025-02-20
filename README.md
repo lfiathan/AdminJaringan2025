@@ -9,10 +9,14 @@
 three-way handshake <br>
 ![image](https://github.com/user-attachments/assets/815cc70d-2df7-4fa0-ba38-d835e75ed692)
 
-time client sending request <br>
+
+3. time client sending request <br>
 ![image](https://github.com/user-attachments/assets/d0736592-6924-429b-9520-c94b56f3e226)
 
-time require to transfer and response from client to server and vice versa <br>
+4. time server receive HTTP request from client
+
+
+5. time require to transfer and response from client to server and vice versa <br>
 ![image](https://github.com/user-attachments/assets/6b06987d-460e-40dc-91f3-6cdcdbd700b4)
 
 
