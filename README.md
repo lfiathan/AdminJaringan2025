@@ -107,4 +107,7 @@ Dari analisis ini, dapat disimpulkan bahwa:
 - Proses komunikasi diawali dengan *three-way handshake* sebelum pengiriman data.  
 - Permintaan HTTP menggunakan versi **HTTP/1.1**.  
 - Server merespons dalam waktu yang wajar dengan status **200 OK**.  
-- Waktu transfer data menunjukkan bahwa ada latensi dalam komunikasi jaringan.  
+- Waktu transfer data menunjukkan bahwa ada latensi dalam komunikasi jaringan.
+
+![image](https://github.com/user-attachments/assets/a40a9793-b656-4991-9ae1-94801187d270)
+
