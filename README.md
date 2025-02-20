@@ -22,3 +22,55 @@ three-way handshake <br>
 
 
 
+# Analisis dan Penjelasan HTTP Capture
+
+## 1. Analisis Versi HTTP
+Pada bagian ini, terlihat bahwa permintaan HTTP yang dikirim oleh klien menggunakan versi **HTTP/1.1**:
+```
+GET /download.html HTTP/1.1
+Host: www.ethereal.com
+```
+- **Metode HTTP**: `GET` digunakan untuk meminta sumber daya dari server.
+- **Versi HTTP**: `HTTP/1.1`, yang memungkinkan koneksi persisten secara default.
+- **Host**: Permintaan ini dikirim ke `www.ethereal.com`.
+
+## 2. Alamat IP dari Klien ke Server
+Pada bagian ini, terdapat informasi tentang alamat IP sumber dan tujuan:
+- **Sumber (Client IP)**: `145.254.160.237`
+- **Tujuan (Server IP)**: `65.208.228.223`
+
+## 3. Three-Way Handshake
+Proses *three-way handshake* terjadi sebelum pengiriman data:
+1. **SYN** dari klien (`145.254.160.237`) ke server (`65.208.228.223`), menunjukkan permintaan koneksi.
+2. **SYN-ACK** dari server (`65.208.228.223`) ke klien (`145.254.160.237`), mengonfirmasi permintaan.
+3. **ACK** dari klien ke server untuk menyelesaikan koneksi.
+
+## 4. Waktu Klien Mengirim Permintaan
+Setelah koneksi terbentuk, klien mengirimkan permintaan HTTP dengan rincian berikut:
+- **Header HTTP**: Mengandung informasi seperti `User-Agent`, `Accept`, `Accept-Encoding`, `Accept-Charset`, dan `Referer`.
+- **Panjang Data**: 479 byte.
+
+## 5. Waktu Server Menerima Permintaan HTTP dari Klien
+Server menerima permintaan HTTP dan merespons dengan status **HTTP/1.1 200 OK**, yang menunjukkan bahwa permintaan berhasil diproses.
+- **Waktu Transfer**: 4.846969 detik sejak awal komunikasi.
+- **Respons Server**: Berisi konten HTML (`text/html`).
+- **Ukuran Respons**: 478 byte.
+
+## 6. Waktu Transfer Data antara Klien dan Server
+Tabel berikut menunjukkan waktu dan ukuran paket yang dipertukarkan:
+| No | Waktu | Sumber | Tujuan | Protokol | Ukuran |
+|----|------------|----------------|----------------|---------|--------|
+| 4  | 0.911310  | 145.254.160.237 | 65.208.228.223 | HTTP | 533 B |
+| 18 | 2.948291  | 145.254.160.237 | 216.239.59.99  | HTTP | 775 B |
+| 27 | 3.955678  | 216.239.59.99   | 145.254.160.237 | HTTP | 214 B |
+| 38 | 4.846969  | 65.208.228.223  | 145.254.160.237 | HTTP | 478 B |
+
+### Kesimpulan
+Dari analisis ini, dapat disimpulkan bahwa:
+- Proses komunikasi diawali dengan *three-way handshake* sebelum pengiriman data.
+- Permintaan HTTP menggunakan versi **HTTP/1.1**.
+- Server merespons dalam waktu yang wajar dengan status **200 OK**.
+- Waktu transfer data menunjukkan bahwa ada latensi dalam komunikasi jaringan.
+
+Analisis ini dapat digunakan untuk memahami alur komunikasi antara klien dan server serta mengidentifikasi kemungkinan kendala dalam koneksi jaringan.
+
