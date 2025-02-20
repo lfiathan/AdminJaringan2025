@@ -2,7 +2,18 @@
 # Analisis dan Penjelasan HTTP Capture
 
 ## 1. Analisis Versi HTTP
-Pada bagian ini, terlihat bahwa permintaan HTTP yang dikirim oleh klien menggunakan versi **HTTP/1.1**:<br>
+Pada bagian ini, terlihat bahwa permintaan HTTP yang dikirim oleh klien menggunakan versi **HTTP/1.1**:
+Definisi
+
+HTTP (Hypertext Transfer Protocol) adalah protokol komunikasi yang digunakan untuk mentransfer data di web.
+
+Langkah-langkah:
+
+Klien mengirim permintaan HTTP dengan metode GET.
+
+Permintaan dikirim ke server dengan versi HTTP/1.1.
+
+Header permintaan berisi informasi tambahan seperti Host, User-Agent, dan Accept.<br>
 ![image](https://github.com/user-attachments/assets/044ed21b-7d72-4f6a-82e1-997752c53fd5)
 ```
 GET /download.html HTTP/1.1
@@ -11,6 +22,7 @@ Host: www.ethereal.com
 - **Metode HTTP**: `GET` digunakan untuk meminta sumber daya dari server.
 - **Versi HTTP**: `HTTP/1.1`, yang memungkinkan koneksi persisten secara default.
 - **Host**: Permintaan ini dikirim ke `www.ethereal.com`.
+
 
 ## 2. Alamat IP dari Klien ke Server
 Pada bagian ini, terdapat informasi tentang alamat IP sumber dan tujuan:<br>
