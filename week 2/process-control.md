@@ -105,7 +105,7 @@ $ ps aux | head -8
 ```
 ![image](https://github.com/user-attachments/assets/6951ed6d-d0ec-4267-901c-a9b73521eda4)
 
-![process-explanation](./data/process-explanation.png)
+![image](https://github.com/user-attachments/assets/629f3da3-7ec4-4280-8802-e1c2b95ba6b4)
 
 Seperangkat argumen berguna lainnya adalah **lax**, yang memberikan informasi teknis lebih banyak tentang process. **lax** sedikit lebih cepat daripada **aux** karena tidak perlu menyelesaikan nama pengguna dan grup.
 
@@ -120,12 +120,14 @@ Untuk mencari process tertentu, Anda dapat menggunakan **grep** untuk memfilter 
 ```bash
 $ ps aux | grep -v grep | grep firefox
 ```
+![image](https://github.com/user-attachments/assets/d16a3359-63ed-4c81-8cd9-8f78e74e85d4)
 
 Kita dapat menentukan PID sebuah process dengan menggunakan **pgrep**.
 
 ```bash
 $ pgrep firefox
 ```
+![image](https://github.com/user-attachments/assets/1d8eb41f-c4c2-47aa-84d4-61cd546ee478)
 
 atau **pidof**.
 
