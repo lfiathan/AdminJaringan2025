@@ -1,4 +1,4 @@
-# Bab 5: Filesystem
+# Filesystem
 
 ![filesystem-icon](https://miro.medium.com/v2/resize:fit:752/1*quw0WvsLLCxad3WC6fjQ1Q.png)
 
@@ -44,36 +44,14 @@ Linux memiliki opsi unmount malas (**umount -l**) yang menghapus filesystem dari
 Daripada menggunakan **umount -f**, Anda dapat menggunakan **lsof** atau **fuser** untuk mencari tahu proses mana yang menggunakan filesystem dan kemudian menghentikannya.
 
 Contoh:
+![image](https://github.com/user-attachments/assets/8c523ed8-b2f7-4900-b5f9-e5b88c423018)
 
-```bash
-# Find out which processes are using the filesystem
-
-abdou@debian:~$ lsof /home/abdou
-
-COMMAND   PID USER   FD   TYPE DEVICE SIZE/OFF   NODE NAME
-bash     1000 abdou  cwd    DIR    8,1     4096  131073 /home/abdou
-bash     1000 abdou  rtd    DIR    8,1     4096  131073 /home/abdou
-bash     1000 abdou  txt    REG    8,1   103752  131072 /bin/bash
-bash     1000 abdou  mem    REG    8,1  1848400  131074 /lib/x86_64-linux-gnu/libc-2.28.so
-bash     1000 abdou  mem    REG    8,1   170864  131075 /lib/x86_64-linux-gnu/ld-2.28.so
-code     1234 abdou  cwd    DIR    8,1     4096  131073 /home/abdou
-msedge   5678 abdou  cwd    DIR    8,1     4096  131073 /home/abdou
-```
 
 Untuk menyelidiki proses yang menggunakan filesystem, Anda bisa menggunakan perintah **ps**.
 
 Contoh:
 
-```bash
-# Investigate the processes that are using the filesystem
-
-abdou@debian:~$ ps up "1234 5678 91011"
-
-USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
-abdou     1234  0.0  0.0  12345  1234 ?        Ssl  00:00   0:00 code
-abdou     5678  0.0  0.0  12345  1234 ?        Ssl  00:00   0:00 msedge
-abdou     91011  0.0  0.0  12345  1234 ?        Ssl  00:00   0:00 chrome
-```
+![image](https://github.com/user-attachments/assets/4c5b9eae-4a29-4b0e-bb1a-7e125bf6e12a)
 
 ## Pengorganisasian file tree
 
@@ -86,8 +64,8 @@ Root filesystem mencakup setidaknya direktori root dan sekumpulan minimal file d
 Beberapa sistem menyimpan file library bersama dan beberapa hal aneh lainnya, seperti preprosesor C, di direktori **/lib** atau **/lib64**. Yang lain telah memindahkan item-item ini ke **/usr/lib**, terkadang meninggalkan **/lib** sebagai link simbolis.
 
 **/usr** dan **/var** juga sangat penting. **/usr** adalah tempat di mana sebagian besar program standar namun tidak kritis untuk sistem disimpan, bersama dengan berbagai hal lain seperti manual online dan sebagian besar library. FreeBSD menyimpan banyak konfigurasi lokal di bawah **/usr/local**. **/var** menampung direktori spool, file log, informasi akuntansi, dan berbagai item lain yang tumbuh atau berubah dengan cepat dan bervariasi pada setiap host. Baik **/usr** dan **/var** harus tersedia agar sistem dapat naik sepenuhnya ke mode multi-pengguna.
+![image](https://github.com/user-attachments/assets/7c5b43d6-a830-47da-ab0e-a12f94f62e5d)
 
-![pathnames](./data/pathnames.png)
 
 ## Tipe file
 
@@ -103,14 +81,13 @@ Sebagian besar implementasi filesystem mendefinisikan tujuh jenis file:
 
 Anda dapat menentukan jenis file dengan menggunakan perintah **file** (ketik **man file** untuk informasi lebih lanjut).
 
-```bash
-$ file /bin/bash
-bin/bash: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=33a5554034feb2af38e8c75872058883b2988bc5, for GNU/Linux 3.2.0, stripped
-```
+![image](https://github.com/user-attachments/assets/fa2378b2-ac80-4e88-8d51-14a60ce6473b)
+
 
 Anda juga dapat menggunakan **ls -ld**, flag **-d** memaksa **ls** untuk menampilkan informasi tentang direktori daripada menampilkan isi direktori.
 
-![file-type-encoding](./data/file-type-encoding.png)
+![image](https://github.com/user-attachments/assets/1f1d10d8-3cbb-4f5a-be26-944887bbafda)
+
 
 **File reguler** terdiri dari serangkaian byte; filesystem tidak memaksakan struktur pada isinya. File teks, file data, program yang dapat dieksekusi, dan library bersama semuanya disimpan sebagai file reguler.
 
@@ -205,8 +182,8 @@ Output **ls** sedikit berbeda untuk file perangkat. Sebagai contoh:
 
 ```bash
 $ ls -l /dev/tty0
-crw--w---- 1 root tty 4, 0 Mar  1  2020 /dev/tty0
 ```
+![image](https://github.com/user-attachments/assets/1352e1df-8e39-4b03-b28f-60b0bfc46659)
 
 **c** di awal baris menunjukkan bahwa file tersebut adalah file perangkat karakter. **4, 0** di akhir baris adalah nomor perangkat utama dan kecil.
 
@@ -214,7 +191,8 @@ crw--w---- 1 root tty 4, 0 Mar  1  2020 /dev/tty0
 
 Perintah **chmod** mengubah mode file. Anda dapat menggunakan notasi oktal atau notasi simbolik.
 
-![permissions-encoding](./data/permissions-encoding.png)
+![image](https://github.com/user-attachments/assets/74d4209f-e76c-4e89-8d3a-d8c2dde90d58)
+
 
 Contoh sintaks mnemonik chmod:
 
@@ -233,7 +211,7 @@ Contoh sintaks mnemonik chmod:
 Perintah **chown** mengubah pemilik dan grup file. Opsi **-R** menyebabkan **chown** mengubah kepemilikan isi file secara rekursif.
 
 ```bash
-$ chown -R abdou:users /home/abdou
+$ chown -R lfiathan:users /home/lfiathan
 ```
 
 ### chgrp: mengubah grup
@@ -241,7 +219,7 @@ $ chown -R abdou:users /home/abdou
 Perintah **chgrp** mengubah grup file. Opsi **-R** menyebabkan **chgrp** mengubah grup isi file secara rekursif.
 
 ```bash
-$ chgrp -R users /home/abdou
+$ chgrp -R users /home/lfiathan
 ```
 
 ### umask: mengatur izin default
@@ -278,7 +256,7 @@ $ getfacl /etc/passwd
 ```
 
 ```bash
-$ setfacl -m u:abdou:rw /etc/passwd
+$ setfacl -m u:lfiathan:rw /etc/passwd
 ```
 
 Ada dua jenis ACL: **POSIX ACL** dan **NFSv4 ACL**. POSIX ACL adalah ACL Unix tradisional, dan NFSv4 ACL adalah jenis ACL yang lebih baru dan lebih kuat.
@@ -305,17 +283,11 @@ POSIX ACL adalah ACL Unix tradisional. ACL ini didukung oleh sebagian besar sist
 Contoh:
 
 ```bash
-$ setfacl -m user:abdou:rwx,group:users:rwx,other::r /home/abdou
+$ setfacl -m user:lfiathan:rwx,group:users:rwx,other::r /home/lfiathan
 
-$ getfacl --omit-header /home/abdou
-
-user::rwx
-user:abdou:rwx
-group::r-x
-group:users:r-x
-mask::rwx
-other::r--
+$ getfacl --omit-header /home/lfiathan
 ```
+![image](https://github.com/user-attachments/assets/725a1933-08ac-4f5a-b5c1-d838a445fb96)
 
 ### NFSv4 ACL
 
@@ -324,5 +296,5 @@ NFSv4 ACL adalah jenis ACL yang lebih baru dan lebih kuat. ACL ini didukung oleh
 NFSv4 ACL mirip dengan POSIX ACL, tetapi memiliki beberapa fitur tambahan. Misalnya, NFSv4 ACL memiliki **default ACL** yang digunakan untuk mengatur ACL file dan direktori baru.
 
 **Izin file NFSv4**
+![image](https://github.com/user-attachments/assets/fbe36649-1383-46d3-81dc-9380fc62df38)
 
-![nsfv4](./data/nfs4.png)
