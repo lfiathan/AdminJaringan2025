@@ -72,6 +72,7 @@ Seperti namanya, perintah **kill** paling sering digunakan untuk menghentikan pr
 ```bash
 kill [-signal] pid
 ```
+![image](https://github.com/user-attachments/assets/0c10fe04-2164-44f9-a055-77cbb53fa722)
 
 di mana *signal* adalah nomor atau nama simbolik dari sinyal yang akan dikirim dan *pid* adalah nomor identifikasi process dari process target.
 
@@ -158,20 +159,15 @@ Misalnya, jika Anda menjalankan pekerjaan intensif CPU yang ingin Anda jalankan 
 Perintah **nice** digunakan untuk memulai process dengan nilai niceness tertentu. Sintaksnya adalah:
 
 ```bash
-nice -n nice_val [command]
-
-# Contoh
-nice -n 10 sh infinite.sh &
+nice -n nice_val [command]    
 ```
 
 Perintah **renice** digunakan untuk mengubah nilai niceness dari process yang sedang berjalan. Sintaksnya adalah:
 
 ```bash
 renice -n nice_val -p pid
-
-# Contoh
-renice -n 10 -p 1234
 ```
+![image](https://github.com/user-attachments/assets/75287d1f-3169-46b0-849f-92e7b4d86cb1)
 
 **Nilai prioritas** adalah prioritas sebenarnya process yang digunakan oleh kernel Linux untuk menjadwalkan tugas.
 Dalam sistem Linux prioritas adalah 0 hingga 139 di mana 0 hingga 99 untuk real-time dan 100 hingga 139 untuk pengguna.
@@ -199,21 +195,9 @@ Untuk mengetahui apa yang dilakukan oleh process, Anda dapat menggunakan **strac
 Misalnya, log berikut dihasilkan oleh strace yang dijalankan terhadap salinan aktif top (yang berjalan sebagai PID 5810):
 
 ```bash
-$ strace -p 5810
-
-gettimeofday({1197646605,  123456}, {300, 0}) = 0
-open("/proc", O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_DIRECTORY) = 7
-fstat64(7, {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
-fcntl64(7, F_SETFD, FD_CLOEXEC)          = 0
-getdents64(7, /* 3 entries */, 32768)   = 72
-getdents64(7, /* 0 entries */, 32768)   = 0
-stat64("/proc/1", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
-open("/proc/1/stat", O_RDONLY)           = 8
-read(8, "1 (init) S 0 1 1 0 -1 4202752"..., 1023) = 168
-close(8)                                = 0
-
-[...]
+$ strace -p 1341
 ```
+![image](https://github.com/user-attachments/assets/356d084c-462c-4241-b492-dcddd379243b)
 
 **top** mulai dengan memeriksa waktu saat ini. Kemudian membuka dan memeriksa direktori **/proc**, dan membaca file **/proc/1/stat** untuk mendapatkan informasi tentang process **init**.
 
@@ -296,12 +280,8 @@ Perintah **systemctl** digunakan untuk mengelola unit systemd. Opsi **list-timer
 
 ```bash
 $ systemctl list-timers
-
-NEXT                         LEFT          LAST                         PASSED       UNIT                         ACTIVATES
-Fri 2021-10-15 00:00:00 UTC  1h 1min left Thu 2021-10-14 00:00:00 UTC  22h ago      logrotate.timer              logrotate.service
-
-1 timers listed.
 ```
+![image](https://github.com/user-attachments/assets/6e90b520-bab6-4cc9-8b73-51a81f205790)
 
 Dalam contoh di atas, unit **logrotate.timer** dijadwalkan untuk mengaktifkan unit **logrotate.service** pada tengah malam setiap hari.
 
