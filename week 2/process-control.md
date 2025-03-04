@@ -1,6 +1,6 @@
-# Bab 4: Process Control
+# Process Control
 
-![Process Control](https://www.sifars.com/blog/wp-content/uploads/2019/10/Procs-1024x577-1.png)
+![Process Control]([https://unstop.com/blog/process-management-in-linux])
 
 ## Komponen Process
 
@@ -225,6 +225,7 @@ Anda juga dapat menggunakan perintah **lsof** untuk mengetahui file mana yang di
 ```bash
 lsof -p pid
 ```
+![image](https://github.com/user-attachments/assets/26a5c1e8-6146-49e4-bf07-9d1d26bec1d9)
 
 ## Process berkala
 
