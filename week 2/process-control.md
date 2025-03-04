@@ -102,15 +102,8 @@ Anda dapat memperoleh gambaran umum yang berguna tentang sistem dengan menjalank
 
 ```bash
 $ ps aux | head -8
-USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
-root         1  0.0  0.0  22556  2584 ?        Ss   2019   0:02 /sbin/init
-root         2  0.0  0.0      0     0 ?        S    2019   0:00 [kthreadd]
-root         3  0.0  0.0      0     0 ?        I<   2019   0:00 [rcu_gp]
-root         4  0.0  0.0      0     0 ?        I<   2019   0:00 [rcu_par_gp]
-root         6  0.0  0.0      0     0 ?        I<   2019   0:00 [kworker/0:0H-kblockd]
-root         8  0.0  0.0      0     0 ?        I<   2019   0:00 [mm_percpu_wq]
-root         9  0.0  0.0      0     0 ?        S    2019   0:00 [ksoftirqd/0]
 ```
+![image](https://github.com/user-attachments/assets/6951ed6d-d0ec-4267-901c-a9b73521eda4)
 
 ![process-explanation](./data/process-explanation.png)
 
@@ -118,15 +111,9 @@ Seperangkat argumen berguna lainnya adalah **lax**, yang memberikan informasi te
 
 ```bash
 $ ps lax | head -8
-F   UID   PID  PPID PRI  NI    VSZ   RSS WCHAN  STAT TTY        TIME COMMAND
-4     0     1     0  20   0  22556  2584 -      Ss   ?          0:02 /sbin/init
-1     0     2     0  20   0      0     0 -      S    ?          0:00 [kthreadd]
-1     0     3     2  20   0      0     0 -      I<   ?          0:00 [rcu_gp]
-1     0     4     2  20   0      0     0 -      I<   ?          0:00 [rcu_par_gp]
-1     0     6     2  20   0      0     0 -      I<   ?          0:00 [kworker/0:0H-kblockd]
-1     0     8     2  20   0      0     0 -      I<   ?          0:00 [mm_percpu_wq]
-1     0     9     2  20   0      0     0 -      S    ?          0:00 [ksoftirqd/0]
 ```
+![image](https://github.com/user-attachments/assets/4e3fff1a-0370-4273-9a08-4cb77ff2170f)
+
 
 Untuk mencari process tertentu, Anda dapat menggunakan **grep** untuk memfilter output **ps**.
 
