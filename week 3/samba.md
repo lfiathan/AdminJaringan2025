@@ -1,20 +1,4 @@
-# LAPORAN MATA KULIAH PRAKTIKUM
-
-# ADMINISTRASI JARINGAN
-
-## **PRAKTIKUM 3: SMB - SERVER MESSAGE BLOCK**
-
-![SMB Header Image](media/image11.png)
-
-Dosen Pengampu:
-Dr Ferry Astika Saputra ST, M.Sc
-
-Dibuat oleh:
-Muhammad Alif Aditya
-3123600016
-Teknik Informatika D4 A
-
-**POLITEKNIK ELEKTRONIKA NEGERI SURABAYA**
+# SMB - SERVER MESSAGE BLOCK
 
 ## Apa itu SMB?
 
@@ -42,7 +26,8 @@ Tidak seperti NFS, yang memerlukan dukungan tingkat kernel, Samba tidak memerluk
 
 Pertama yaitu dengan menginstal ntp yaitu network time protocol, yang berfungsi untuk mengubah protokol network menggunakan waktu indonesia
 
-![NTP Installation](media/image3.png)
+![image](https://github.com/user-attachments/assets/f664e231-b08b-42db-98c3-459d896e6f1f)
+
 
 Command menginstal:
 ```
@@ -56,7 +41,7 @@ sudo nano /etc/ntpsec/ntp.conf
 
 Setelah itu anda bisa scroll kebawah sampai menemukan konfigurasi server, anda bisa mengganti konfigurasi server menjadi berikut
 
-![NTP Configuration](media/image1.png)
+![image](https://github.com/user-attachments/assets/3c5c57c1-e320-4001-86ed-f543f711c351)
 
 Klik ctrl + x lalu "y" setelah itu klik enter untuk keluar
 
@@ -72,10 +57,10 @@ sudo apt install samba && sudo apt install smbclient
 Anda bisa mengonfigurasi Samba dengan mengedit berkas `/etc/samba/smb.conf` (`/usr/local/etc/smb4.conf` pada FreeBSD). Berkas tersebut menentukan direktori yang akan dibagikan, hak aksesnya, dan parameter operasional umum Samba (ketik `testparm -v` untuk melihat semua opsi konfigurasi)
 
 Penggunaan Samba yang paling umum adalah untuk berbagi berkas dengan klien Windows. Akses ke berbagi berkas ini harus diautentikasi melalui akun pengguna dengan salah satu dari dua opsi. Tambahkan konfigurasi berikut ke file `/etc/samba/smb.conf` untuk mengatur limited share dan public share:
+![image](https://github.com/user-attachments/assets/67bbf8d7-dd8f-4a45-86df-dd87de1dbe34)
 
-![Samba Configuration 1](media/image4.png)
+![image](https://github.com/user-attachments/assets/c5f736a6-e623-4024-8965-da653591e55a)
 
-![Samba Configuration 2](media/image8.png)
 
 ## 3. **Membuat Direktori untuk Limited dan Public Share**
 
@@ -87,10 +72,8 @@ sudo mkdir -p sambapublic
 ```
 
 Setelah direktori dibuat, kita perlu menetapkan izin akses yang sesuai.
+![image](https://github.com/user-attachments/assets/efede50c-5d9c-44da-a19b-51247854e22f)
 
-![Creating Directories 1](media/image7.png)
-
-![Creating Directories 2](media/image7.png)
 
 ## 4. **Memulai Samba Service**
 
@@ -103,7 +86,8 @@ sudo systemctl enable smbd
 
 Perintah ini memastikan bahwa layanan Samba berjalan secara otomatis saat sistem dinyalakan.
 
-![Start Samba Service](media/image6.png)
+![image](https://github.com/user-attachments/assets/87db638b-1822-41fc-a555-8695d65bd3b1)
+
 
 ## 5. **Membuat Grup SMB dan Menambahkan Pengguna**
 
@@ -113,8 +97,8 @@ Kita perlu membuat grup khusus untuk pengguna yang akan memiliki akses terbatas.
 sudo groupadd smbgroup
 sudo usermod -aG smbgroup lfiathan
 ```
+![image](https://github.com/user-attachments/assets/f73e9460-057b-4a43-a7b8-18d99c640844)
 
-![Create SMB Group](media/image5.png)
 
 Pengguna "lfiathan" sekarang menjadi anggota grup "smbgroup".
 
@@ -133,8 +117,8 @@ Untuk folder public share, atur izin agar semua orang dapat mengaksesnya:
 sudo chown -R nobody:nogroup /sambashare
 sudo chmod -R 777 /sambapublic
 ```
+![image](https://github.com/user-attachments/assets/77aa1afb-eee4-4391-aaa9-87b9174c3570)
 
-![Set Permissions](media/image2.png)
 
 ## 7. **Result**
 
@@ -153,9 +137,13 @@ smbclient //ipaddress/sambashare -U lfiathan
 Dan untuk windows, anda bisa menggunakan menu network files.
 
 Public share:
-![Public Share Access](media/image12.png)
+![image](https://github.com/user-attachments/assets/d17f7a9a-b112-4d7f-bd26-4ce971649ebe)
+
 
 Limited share:
-![Limited Share Access 1](media/image9.png)
+![image](https://github.com/user-attachments/assets/83ae7d27-768b-45e7-854e-6e8f46e12aa6)
+![image](https://github.com/user-attachments/assets/e6305052-4ae3-47ff-af26-600730f1d0b2)
+
+
 
 ![Limited Share Access 2](media/image10.png)
