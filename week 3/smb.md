@@ -1,15 +1,4 @@
-# LAPORAN MATA KULIAH PRAKTIKUM ADMINISTRASI JARINGAN
-## PRAKTIKUM 3: SMB - SERVER MESSAGE BLOCK
-
-**Dosen Pengampu:**  
-Dr. Ferry Astika Saputra ST, M.Sc
-
-**Dibuat oleh:**  
-Muhammad Alif Aditya  
-3123600016  
-Teknik Informatika D4 A  
-POLITEKNIK ELEKTRONIKA NEGERI SURABAYA
-
+# SMB - SERVER MESSAGE BLOCK
 ## Apa itu SMB?
 
 Server Message Block (SMB) adalah protokol jaringan yang memungkinkan pengguna untuk berbagi berkas, printer, dan sumber daya lainnya. Protokol ini juga dikenal sebagai Common Internet File System (CIFS).
@@ -118,7 +107,7 @@ smbclient //ipadress/sambapublic
 
 Untuk limited share:
 ```
-smbclient //10.252.130.150/sambashare -U lfiathan
+smbclient //ipaddress/sambashare -U user
 ```
 
 Dan untuk Windows, anda bisa menggunakan menu Network Files.
