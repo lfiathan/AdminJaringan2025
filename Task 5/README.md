@@ -3,7 +3,6 @@
 # RANGKUMAN KOMPREHENSIF TENTANG EMAIL
 ## Nama  : Alif Aditya
 ## NRP : 3123600016
-## Praktikum Ke-5: Routing dan Konfigurasi DNS
 ![Email Concept](https://via.placeholder.com/600x300)
 
 **Workshop Administrasi Jaringan**
