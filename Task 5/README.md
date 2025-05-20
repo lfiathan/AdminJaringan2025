@@ -6,8 +6,6 @@
 
 **Workshop Administrasi Jaringan**
 
-*Sistem Komunikasi Digital Melalui Jaringan Komputer*
-
 </div>
 
 ---
