@@ -1,11 +1,25 @@
+---
+<div align="center">
+  
 # Laporan Praktikum Administrasi Jaringan: Routing dan DNS
 
-## Nama  : Alif Aditya
-## NRP : 3123600016
 ## Praktikum Ke-5: Routing dan Konfigurasi DNS
 
----
+dibuat oleh:
 
+Nama  : Alif Aditya
+
+NRP : 3123600016
+
+Dosen Pengampu
+
+Dr. Ferry Astika Saputra, S.T., M.Sc
+
+GitHub:([@ferryastika](https://github.com/ferryastika))
+
+**Workshop Administrasi Jaringan**
+
+</div>
 ## Tujuan Praktikum
 - Membuat jaringan virtual menggunakan VirtualBox yang terdiri dari 3 VM.
 - Mengkonfigurasi VM1 sebagai router (gateway NAT) menggunakan iptables.
