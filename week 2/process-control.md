@@ -1,5 +1,16 @@
 # Process Control
 
+Dibuat oleh
+
+Muhammad Alif Aditya / 3123600016
+
+Teknik Informatika D4 A
+
+Dosen Pengampu
+
+Dr. Ferry Astika Saputra, S.T., M.Sc
+
+GitHub:([@ferryastika](https://github.com/ferryastika))
 ## Komponen Process
 
 Sebuah process terdiri dari ruang alamat dan sekumpulan struktur data dalam kernel. Ruang alamat adalah sekumpulan halaman memori yang ditandai oleh kernel untuk penggunaan process. (Halaman adalah unit dalam pengelolaan memori. Biasanya berukuran 4KiB atau 8KiB.) Halaman-halaman ini digunakan untuk menyimpan kode, data, dan stack process. Struktur data dalam kernel melacak status process, prioritasnya, parameter penjadwalan, dan sebagainya.
