@@ -1,4 +1,16 @@
-# AdminJaringan2025  
+# AdminJaringan2025
+
+Dibuat oleh
+
+Muhammad Alif Aditya / 3123600016
+
+Teknik Informatika D4 A
+
+Dosen Pengampu
+
+Dr. Ferry Astika Saputra, S.T., M.Sc
+
+GitHub:([@ferryastika](https://github.com/ferryastika))
 ## Analisis dan Penjelasan HTTP Capture  
 
 ### 1. Analisis Versi HTTP  
