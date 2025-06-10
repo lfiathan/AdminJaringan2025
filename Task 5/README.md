@@ -1,8 +1,8 @@
 <div align="center">
 
-# RANGKUMAN KOMPREHENSIF TENTANG EMAIL
-## Nama  : Alif Aditya
-## NRP : 3123600016
+
+Nama  : Alif Aditya
+NRP : 3123600016
 Dosen Pengampu
 
 ## Dr. Ferry Astika Saputra, S.T., M.Sc
@@ -12,8 +12,7 @@ Dosen Pengampu
 
 </div>
 
----
-
+# RANGKUMAN EMAIL
 ## 📧 Pengertian Email
 
 Email (Electronic Mail) adalah metode pertukaran pesan digital antar pengguna melalui jaringan komputer, terutama internet. Sistem ini memungkinkan pengiriman pesan teks, gambar, dan berbagai jenis lampiran secara instan ke seluruh dunia.
