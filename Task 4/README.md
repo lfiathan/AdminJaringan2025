@@ -3,7 +3,7 @@
   
 # Routing dan DNS
 
-## Praktikum Ke-5: Routing dan Konfigurasi DNS
+## Routing dan Konfigurasi DNS
 
 dibuat oleh:
 
