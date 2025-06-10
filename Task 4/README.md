@@ -1,7 +1,7 @@
 ---
 <div align="center">
   
-# Laporan Praktikum Administrasi Jaringan: Routing dan DNS
+# Routing dan DNS
 
 ## Praktikum Ke-5: Routing dan Konfigurasi DNS
 
