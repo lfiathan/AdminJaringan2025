@@ -1,14 +1,14 @@
 Dibuat oleh :
 
-# Muhammad Alif Aditya
+## Muhammad Alif Aditya
 
-# 3123600016
+##3123600016
 
-# Teknik Informatika D4 A
+## Teknik Informatika D4 A
 
 Dosen Pengampu :
 
-# Dr. Ferry Astika Saputra ST, M.Sc : ([@ferryastika](https://github.com/ferryastika))
+## Dr. Ferry Astika Saputra ST, M.Sc : ([@ferryastika](https://github.com/ferryastika))
 
 # SMB - SERVER MESSAGE BLOCK
 
