@@ -1,16 +1,22 @@
+<div align="center">
+  
 # SMB - SERVER MESSAGE BLOCK
+  
+dibuat oleh:
 
-Dibuat oleh
+Nama  : Alif Aditya
 
-Muhammad Alif Aditya / 3123600016
-
-Teknik Informatika D4 A
+NRP : 3123600016
 
 Dosen Pengampu
 
 Dr. Ferry Astika Saputra, S.T., M.Sc
 
 GitHub:([@ferryastika](https://github.com/ferryastika))
+
+**Workshop Administrasi Jaringan**
+
+</div>
 ## Apa itu SMB?
 
 Server Message Block (SMB) adalah protokol jaringan yang memungkinkan pengguna untuk berbagi berkas, printer, dan sumber daya lainnya. Protokol ini juga dikenal sebagai Common Internet File System (CIFS).
