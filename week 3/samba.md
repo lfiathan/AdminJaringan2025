@@ -2,11 +2,9 @@
 
 Dibuat oleh
 
-Nama: Muhammad Alif Aditya
+Muhammad Alif Aditya / 3123600016
 
-NRP: 3123600016
-
-Kelas: Teknik Informatika D4 A
+Teknik Informatika D4 A
 
 Dosen Pengampu
 
