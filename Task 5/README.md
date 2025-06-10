@@ -3,7 +3,11 @@
 # RANGKUMAN KOMPREHENSIF TENTANG EMAIL
 ## Nama  : Alif Aditya
 ## NRP : 3123600016
+Dosen Pengampu
 
+## Dr. Ferry Astika Saputra, S.T., M.Sc
+
+## GitHub:([@ferryastika](https://github.com/ferryastika))
 **Workshop Administrasi Jaringan**
 
 </div>
