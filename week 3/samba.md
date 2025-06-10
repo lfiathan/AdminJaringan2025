@@ -3,11 +3,15 @@
 Dibuat oleh
 
 Nama: Muhammad Alif Aditya
-NIM: 3123600016
+
+NRP: 3123600016
+
 Kelas: Teknik Informatika D4 A
+
 Dosen Pengampu
 
 Dr. Ferry Astika Saputra, S.T., M.Sc
+
 GitHub:([@ferryastika](https://github.com/ferryastika))
 ## Apa itu SMB?
 
