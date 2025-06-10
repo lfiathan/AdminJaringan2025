@@ -1,17 +1,27 @@
+
+
+<div align="center">
+  
 # AdminJaringan2025
 
-Dibuat oleh
+## Analisis dan Penjelasan HTTP Capture  
 
-Muhammad Alif Aditya / 3123600016
+dibuat oleh:
 
-Teknik Informatika D4 A
+Nama  : Alif Aditya
+
+NRP : 3123600016
 
 Dosen Pengampu
 
 Dr. Ferry Astika Saputra, S.T., M.Sc
 
 GitHub:([@ferryastika](https://github.com/ferryastika))
-## Analisis dan Penjelasan HTTP Capture  
+
+**Workshop Administrasi Jaringan**
+
+</div>
+
 
 ### 1. Analisis Versi HTTP  
 HTTP (*Hypertext Transfer Protocol*) adalah protokol komunikasi yang digunakan untuk mentransfer data di web.  
