@@ -1,16 +1,24 @@
+
+<div align="center">
+  
 # Filesystem
+  
+dibuat oleh:
 
-Dibuat oleh
+Nama  : Alif Aditya
 
-Muhammad Alif Aditya / 3123600016
-
-Teknik Informatika D4 A
+NRP : 3123600016
 
 Dosen Pengampu
 
 Dr. Ferry Astika Saputra, S.T., M.Sc
 
 GitHub:([@ferryastika](https://github.com/ferryastika))
+
+**Workshop Administrasi Jaringan**
+
+</div>
+
 ![filesystem-icon](https://miro.medium.com/v2/resize:fit:752/1*quw0WvsLLCxad3WC6fjQ1Q.png)
 
 Tujuan dasar dari sebuah filesystem adalah untuk merepresentasikan dan mengorganisasi sumber daya penyimpanan sistem.
