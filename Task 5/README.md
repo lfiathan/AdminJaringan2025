@@ -1,5 +1,7 @@
 <div align="center">
-
+# RANGKUMAN EMAIL
+  
+dibuat oleh:
 
 Nama  : Alif Aditya
 
@@ -15,7 +17,7 @@ GitHub:([@ferryastika](https://github.com/ferryastika))
 
 </div>
 
-# RANGKUMAN EMAIL
+
 ## 📧 Pengertian Email
 
 Email (Electronic Mail) adalah metode pertukaran pesan digital antar pengguna melalui jaringan komputer, terutama internet. Sistem ini memungkinkan pengiriman pesan teks, gambar, dan berbagai jenis lampiran secara instan ke seluruh dunia.
